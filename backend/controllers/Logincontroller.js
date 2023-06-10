@@ -24,6 +24,7 @@ const match=user.checkPassword(req.body.password);
 
 const token=newToken(user);
 return res.status(201).send({user,token});
+
 }
 catch(err){
     return res.status(500).send({ message: err.message})

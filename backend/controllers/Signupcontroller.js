@@ -10,7 +10,6 @@ const newToken = (user) => { // receive user and add token
 Router.post("",async(req,res)=>{
 try{
     const user  = await SignupSchema.findOne({email:req.body.email}).lean().exec();
-
     if(user)
     {
         return res.status(400).send({ message: "User with that email already exits" });
