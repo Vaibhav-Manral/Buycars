@@ -2,7 +2,6 @@ const mongoose=require("mongoose");
 
 const DealerInventory = new mongoose.Schema(
     {
-    CarId:{type:String,required:true},  
     CarName:{type:String,required:true},
     CarManufacturer:{type:String,required:true},
     Picture:{type:String,required:true},
