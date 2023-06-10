@@ -6,7 +6,6 @@ const upload =require('../middleware/multer');
 Router.post("",upload.single("Picture"),async(req,res)=>{
 try{
     const DealerData = await DealerSchema.create({
-        CarId:req.body.CarId,
         CarName:req.body.CarName,
         CarManufacturer:req.body.CarManufacturer,
         Picture:req.file.path,

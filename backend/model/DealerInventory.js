@@ -1,5 +1,4 @@
 const mongoose=require("mongoose");
-
 const DealerInventory = new mongoose.Schema(
     {
     CarName:{type:String,required:true},
